@@ -1,0 +1,33 @@
+.category-switcher {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 25px;
+  padding: 10px 0;
+  border-bottom: 1px solid #e2e8f0;
+  font-family: Helvetica, sans-serif;
+}
+
+.category-btn {
+  padding: 8px 16px;
+  border: 1px solid #cbd5e1;
+  border-radius: 6px;
+  background-color: #ffffff;
+  color: #475569;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  font-family: Helvetica, sans-serif;
+}
+
+.category-btn:hover:not(.active) {
+  background-color: #f1f5f9;
+  border-color: #94a3b8;
+}
+
+.category-btn.active {
+  background-color: #1e3a8a;
+  color: #ffffff;
+  border-color: #1e3a8a;
+  box-shadow: 0 2px 4px rgba(30, 58, 138, 0.3);
+  transform: translateY(-1px);
+}

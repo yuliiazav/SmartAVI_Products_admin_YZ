@@ -1,0 +1,14 @@
+.app-wrapper {
+  width: 100%;
+  min-height: 100vh;
+  background: #f9fafb;
+  font-family: Helvetica, sans-serif;
+  position: relative;
+}
+
+.logout-button {
+  position: absolute;
+  top: 50px;
+  right: 50px;
+  font-family: Helvetica, sans-serif;
+}

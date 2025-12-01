@@ -1,0 +1,27 @@
+.admin-wrapper {
+  padding: 0 40px;
+  overflow: scroll;
+  height: 100vh;
+  font-family: Helvetica, sans-serif;
+}
+
+.subcat1-title {
+  margin: 0;
+  padding: 5px 0;
+  background: #1e1c1cab;
+  border: 2px solid #bbb;
+  font-size: 1.5rem;
+  color: #fff;
+  text-align: center;
+  font-family: Helvetica, sans-serif;
+}
+
+.subcat2-title {
+  margin: 0;
+  padding: 10px 0;
+  font-size: 1.3rem;
+  border-top: 1px solid #2872c27a;
+  color: #475569;
+  letter-spacing: 6px;
+  font-family: Helvetica, sans-serif;
+}
