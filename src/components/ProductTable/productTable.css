@@ -70,3 +70,25 @@
 .products-table tbody tr:last-child td:last-child {
   border-bottom-right-radius: 8px;
 }
+
+.links-container a {
+  display: inline-block;
+  margin: 2px;
+}
+
+.links-container a:hover {
+  text-decoration: underline;
+}
+
+.links-container a:not(:last-child)::after {
+  content: ",";
+  margin-left: 2px;
+}
+
+.links-container a:last-child {
+  margin-right: 0;
+}
+
+.links-container a:last-child::after {
+  content: "";
+}

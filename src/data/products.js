@@ -14,6 +14,18 @@ export const products = [
     upc: "657477065454",
     effective: "15.01.2025",
     mainCategory: "Converters",
+    resources: {
+      brochure:
+        "https://smartavi.com/wp-content/uploads/2019/05/cvh-01-v2_brochure-1.pdf",
+      manual: null,
+      quickStartGuide:
+        "https://smartavi.com/wp-content/uploads/2019/05/CVH-01-V2-QSG-1.pdf",
+      photoFront:
+        "https://smartavi.com/wp-content/uploads/2019/05/front-scaled.jpg",
+      diagram:
+        "https://smartavi.com/wp-content/uploads/2019/05/diagram_cvh-01-v2-01-3.jpg",
+      imagesZIP: "https://smartavi.com/admin-products-data/CVH-01-S_V2_all.zip",
+    },
   },
   {
     partNumber: "V2V-C2V-01-S",

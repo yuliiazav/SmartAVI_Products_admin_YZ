@@ -14,7 +14,8 @@ export default function ProductTable({ data }) {
           <th>MSRP</th>
           <th>Max Distance</th>
           <th>UPC</th>
-          <th>Effective</th>
+          {/* <th>Effective</th> */}
+          <th>Resources</th>
         </tr>
       </thead>
 
@@ -35,7 +36,63 @@ export default function ProductTable({ data }) {
               <td>{item.msrp}</td>
               <td>{item.maxDistance || "-"}</td>
               <td>{item.upc || "-"}</td>
-              <td>{item.effective}</td>
+              {/* <td>{item.effective}</td> */}
+              <td className="resources-cell">
+                {item.resources ? (
+                  <div className="links-container">
+                    {item.resources.brochure && (
+                      <a
+                        href={item.resources.brochure}
+                        download
+                        target="_blank"
+                      >
+                        Brochure
+                      </a>
+                    )}
+                    {item.resources.manual && (
+                      <a href={item.resources.manual} download target="_blank">
+                        Manual
+                      </a>
+                    )}
+                    {item.resources.quickStartGuide && (
+                      <a
+                        href={item.resources.quickStartGuide}
+                        download
+                        target="_blank"
+                      >
+                        Quick Start Guide
+                      </a>
+                    )}
+                    {item.resources.photoFront && (
+                      <a
+                        href={item.resources.photoFront}
+                        download
+                        target="_blank"
+                      >
+                        Front Photo
+                      </a>
+                    )}
+                    {item.resources.diagram && (
+                      <a href={item.resources.diagram} download target="_blank">
+                        Diagram
+                      </a>
+                    )}
+
+                    {item.resources.imagesZIP && (
+                      <a
+                        href={item.resources.imagesZIP}
+                        download
+                        target="_blank"
+                      >
+                        [ALL files ZIP]
+                      </a>
+                    )}
+                  </div>
+                ) : (
+                  // If item.resources === null
+                  <span>N/A</span>
+                )}
+              </td>
             </tr>
           ))
         )}
