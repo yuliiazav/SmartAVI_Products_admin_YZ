@@ -74,10 +74,14 @@
 .links-container a {
   display: inline-block;
   margin: 2px;
+  text-decoration: none;
+  color: #0b5db4;
+  transition: all 0.5s ease-in-out;
 }
 
 .links-container a:hover {
   text-decoration: underline;
+  color: #032c57;
 }
 
 .links-container a:not(:last-child)::after {

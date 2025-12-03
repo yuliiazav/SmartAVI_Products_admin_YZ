@@ -36,6 +36,7 @@ export const products = [
     upc: "813280020183",
     effective: "15.01.2025",
     mainCategory: "Converters",
+    resources: null,
   },
   {
     partNumber: "V2V-D2H-01-S",
